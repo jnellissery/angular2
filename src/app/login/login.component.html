@@ -1,0 +1,46 @@
+<div class="view">
+    <div class="container">
+         <br />  <br />
+        <header>
+            <h3><span class="glyphicon glyphicon-lock"></span> Login</h3>
+        </header>
+        <br />
+        <form   class="login-form" novalidate>
+            <div class="login">
+                <div class="row">
+                    <div class="col-md-2">
+                        Email:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" name="email" class="form-control"   required />
+                     
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Password:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="password" name="password" class="form-control"  required />
+                        
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success" >Login</button>
+                    </div>
+                </div>
+                <br />
+                <div class="statusRow">
+                    <br />
+                    <div class="label label-important" *ngIf="errorMessage">
+                        <span class="glyphicon glyphicon-thumbs-down icon-white"></span>&nbsp;&nbsp;Error: {{ errorMessage }}
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>
